@@ -9,8 +9,10 @@ A way to generate complex encripted password(s) and email them to yourself!
 
 
 
-Note: This is for educational purposes only, this may not be efficient or bug-free. Also, this is just a demo on how
-JS and Python can be used to interact together. This demo is *NOT* meant to show face detection or object detection.
+# Description:
+```
+Pass Keep
+```
 
 ## General Dependenices
   * Python
