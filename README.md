@@ -10,9 +10,7 @@ A way to generate complex encripted password(s) and email them to yourself!
 
 
 # Description:
-```
-Pass Keep
-```
+Pass Keep 
 
 ## General Dependenices
   * Python
