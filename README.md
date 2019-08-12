@@ -1,4 +1,4 @@
-# Pass Keep App
+# Pass Keep App - BETA
 A way to generate complex encripted password(s) and email them to yourself!
 
 
