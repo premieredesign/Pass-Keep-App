@@ -1,0 +1,59 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/generate-pass.css">
+  <script src="./linkers/generate.js"></script>
+  <script>
+    function generate() {
+      generate_pass();
+      document.getElementById('email-btn').removeAttribute("disabled");
+      document.getElementById('generate-btn').setAttribute("disabled","disabled");
+    }
+
+    function email() {
+      generate_email();
+      document.getElementById('email-btn').removeAttribute("disabled");
+      document.getElementById('generate-btn').removeAttribute("disabled");
+    }
+  </script>
+  <title>Pass Keep</title>
+</head>
+
+<body>
+  <br>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Pass Keep</h1>
+      <h6>powered by: C|M|J</h6>
+    </div>
+    <hr>
+    <br>
+    <div hidden="appName" class="pass-question">
+      <div class="jumbotron margin-bottom-30">
+        <div class="question">
+          <h4>1. Enter the name you want a password generated for ?</h4>
+          <input id="app-name" type="text" placeholder=" i.e 'slack'"/>
+        </div>
+        <div class="question">
+          <h4>2. Enter the length you want the password to be 6 - 25 ?</h4>
+          <input id="pass-len" type="text" placeholder=" i.e 12"/>
+        </div>
+        <div class="question">
+          <h4>3. Do you want special character ?</h4>
+          <input id="with-special" type="text" placeholder=" i.e true or false"/>
+        </div>
+        <button id="generate-btn" class="generate-button btn btn-success"><a style="color:white" onclick="generate()">Generate</a></button>
+        <hr>
+        <div class="question question-space">
+          <h4>4. Enter your email address, generated password will be sent here ? - (GMAIL Only)</h4>
+          <input id="sender-email" type="email" placeholder="@"/>
+        </div>
+        <div class="question">
+          <h4>5. Enter your email address password ?</h4>
+          <input id="sender-password" type="password" placeholder="pass***"/>
+        </div>
+        <button disabled class="generate-button btn btn-success" id="email-btn" onclick="email()">Email</button>
+      </div>
+    </div>
+  </div>
+</body>
